@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>AT Computers</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage demo easing effect." />
+	<meta name="keywords"  content="fullpage,jquery,demo,easing,effect,jqueui" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./vendors/scrolloverflow.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu',
+
+				//equivalent to jQuery `easeOutBack` extracted from http://matthewlein.com/ceaser/
+				easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Clients</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Contact Us</a></li>
+</ul>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+			<h1>About AT COMPUTERS</h1>
+		<center>
+		<div class="home">
+		
+		<p>No matter what stage you are in— from startup to enterprise— Intrepid has a solution. Whether you're looking for end-to-end digital product services or augmenting your existing team, Intrepid has the capabilities to customize a solution that fits your needs.
+		</p>
+		</div>
+	</center>
+		<button><a href="#3rdPage">Contact Us</a></button>
+		<!-- <img src="imgs/fullPage.png" alt="fullPage" /> -->
+	</div>
+	<div class="section" id="section1">
+		<div class="intro">
+				<h1>Our Clients</h1>
+			
+			<a href="http://www.atibservicesltd.com/" target="_blank"><img src="imgs/atib.jpeg" alt="Cool" /></a>
+			<a href="https://www.liebherr.com/en/usa/about-liebherr/liebherr-worldwide/nigeria/liebherr-in-nigeria.html" target="_blank"><img src="imgs/liba.jpg" alt="Cool" /></a>
+			<a href="https://www.mdcn.gov.ng/" target="_blank"><img src="imgs/mdcn.jpg" alt="Cool" /></a>
+			<p>
+				<a href="http://www.sagepastel.com/Sage-Pastel-Software-Products/Pastel-Evolution-ERP-Software-Solution.asp" target="_blank"><img src="imgs/sage.jpg" alt="Cool" /></a>
+				<a href="http://powersoft.powersoft-solutions.org/powersoft/home.aspx" target="_blank"><img src="imgs/powerent.png" alt="Cool" /></a>
+			</p>
+			
+			<p>We supply infrastructure and develop customised software solutions for our clients.</p>
+			
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<!-- <div class="intro"> -->
+
+			 <!-- form user info -->
+			 <!-- <div class="card card-outline-secondary">
+					<div class="card-header">
+						<h3 class="mb-0">Send us a Message</h3>
+					</div> -->
+					<div class="row justify-content-center">
+						<div class="col-md-6">
+						<form class="form" role="form" autocomplete="off">
+							<fieldset>
+								<label for="name2" class="mb-0">Name</label>
+								<div class="row mb-1">
+									<div class="col-lg-12">
+										<input type="text" name="name2" id="name2" class="form-control" required="">
+									</div>
+								</div>
+								<label for="email2" class="mb-0">Email</label>
+								<div class="row mb-1">
+									<div class="col-lg-12">
+										<input type="text" name="email2" id="email2" class="form-control" required="">
+									</div>
+								</div>
+								<label for="message2" class="mb-0">Message</label>
+								<div class="row mb-1">
+									<div class="col-lg-12">
+										<textarea rows="6" name="message2" id="message2" class="form-control" required=""></textarea>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-secondary btn-lg float-left">Send Message</button>
+							</fieldset>
+						</form>
+					</div>
+					</div>
+				<!-- </div> -->
+				<!-- /form user info -->
+
+		<!-- </div> -->
+	</div>
+</div>
+
+
+</body>
+</html>
