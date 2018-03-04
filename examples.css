@@ -270,5 +270,6 @@ button a{
 
 center{
 	width: 65%;
+	display: inline-block !important;
 	
 }
